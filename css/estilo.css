@@ -1,0 +1,86 @@
+/*
+@media screen and (min-width: 767px) {*/
+
+	* {
+		margin: 0;
+		padding: 0; 
+		box-sizing: border-box;
+		text-decoration: none;
+	}
+	body{
+		height: 100%;
+		background-color: white;
+	}
+
+	/*HEADER*/
+	header {
+		background-color: #000000;
+		width: 100%;
+		height: 70px;
+		/*box-shadow: 0px 3px 3px #5E5D5D;*/
+		position: fixed; 
+		/*FELX*/
+		/*Elemento hijo del contendor,
+		pero elemento padre del titutlo y del menu*/
+		display: flex;
+		justify-content: space-between; /*Sepera los elementos de header*/
+		align-items: center; /*Usamos esto para centrar nuestro elementos del menu*/
+		flex-direction: row; /*Elementos en linea*/
+		flex-wrap: wrap; /*Si no entran, se ponen debajo*/
+	}
+
+
+	header .logo{
+		height: 100%;
+		margin-bottom: 4px;
+		width: 40%;
+	}
+
+	header .menu{
+		display: inline-block;
+		border:none;
+		position: relative;
+		top: 0px;
+		width: 50%;
+		text-align: right;
+		align-items: center;
+		vertical-align: middle;
+		margin-right: 3%;
+		font-weight: bold;
+		font-style: italic;
+	}
+	header .submenu{
+		margin-right: 3%;
+		color: white;
+	}
+
+	/*RESTO DE LA PAGINA*/
+	.contenedor{
+		padding-top: 10%;
+		height: 100%;
+		background-color: #DD1D1D;
+	}
+	.main{
+		height: 100%;
+	}
+	.presentacion{
+		height: 100%;
+	}
+
+	/*PIE DE PAGINA*/
+	footer{
+		position: relative;
+		background-color: black;
+		color: white;
+		width: 100%;
+		height: 100%;
+	
+	}
+
+	footer .social{
+		text-decoration: none;
+		color: white;
+
+		/*Poner que sea icono de face*/
+	}
+
