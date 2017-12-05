@@ -8,9 +8,6 @@
 		box-sizing: border-box;
 
 	}*
-	body{
-		background-color: white;
-	}
 
 	.contenedor{
 		background:#ccc;
@@ -22,20 +19,25 @@
 		flex-flow:row wrap;
 	}
 
+	body{
+		background-color: #ccc;
+	}
+
 	/*HEADER*/
 	header {
 		background-color: #000000;
 		width: 100%;
-		height: 70px;		
+		/*height: 70px;*/		
 		box-shadow: 0px 3px 3px #5E5D5D;
 		padding: 20px;
-		/*position: fixed; /*Se queda anclado arriba*/
+		/*position: fixed; 
 
 		/*FELX*/
 		display: flex;/*Elemento hijo del contenedor, pero elemento padre del logo y del menu*/
 		align-items: center;/*Usamos esto para centrar nuestro elementos del menu*/
 		flex-direction: row; /*Elementos en linea*/
 		flex-wrap: wrap; /*Si no entran, se ponen debajo*/
+		justify-content: space-between;
 	}
 
 	
@@ -70,8 +72,7 @@
 	header a{
 		/*Tipo de letras*/
 		color: white;
-		font-style: oblique;
-		font-size: 20px;
+		font-family: 'Pinyon Script', cursive;
 		font-weight: bold;
 		
 
@@ -79,9 +80,9 @@
 		flex-grow: 1; /*Hace que los elementos del menu ocupen el 100%*/
 
 	}
-	.submenu{
+	header .submenu{
+		font-size: 30px;
 		padding: 10px;
-		margin-left: 10px;
 	}
 
 	header .submenu:hover {
@@ -90,9 +91,9 @@
 
 	/*RESTO DE PAGINA*/
 	.main{
+		/*margin-top: 120px;*/
 		width: 100%;
 		padding: 10px;
-
 		/*FELX*/
 		flex: 1 1 70%;
 		/*
@@ -144,25 +145,36 @@
 
 		/*Poner que sea icono de face
 	}*/
-	
-	@media screen and (max-width: 800px){
-		.contenedor{
-			flex-direction: column;
+
+	@media screen and (max-width: 800px) {
+		.contenedor {
+			flex-direction:column;
 		}
-		header{
+	 
+		header {
 			flex-direction: column;
-			padding: 0;
+			padding:0;
 		}
-		header .menu {
-			flex-direction: column;
-			padding: 0;
+	 
+		header .logo {
+			margin:20px 0;
 		}
 
-		header .logo{
-
+		header .titulo{
+			background-color: #F99696;  
 		}
-		header nav{
+	 
+		header nav {
 			width: 100%;
 		}
 	}
 
+	@media screen and (max-width: 600px) {
+		header .titulo{
+			background-color: #F9D119;  
+		}
+		footer {
+			justify-content:space-around;
+		}
+	}
+ 
