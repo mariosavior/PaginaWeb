@@ -1,0 +1,19 @@
+
+
+	.contenedor{
+		background:#060505;
+		width: 100%;		
+		margin:auto;
+	 	position: relative;
+		/* Flexbox */
+		display:flex;
+		flex-flow:column wrap;
+		align-items: center;
+	}
+
+	form{
+		/*FLEX*/
+		
+	}
+
+
