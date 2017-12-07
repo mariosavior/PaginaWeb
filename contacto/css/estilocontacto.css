@@ -1,19 +1,44 @@
 
-
-	.contenedor{
-		background:#060505;
-		width: 100%;		
-		margin:auto;
-	 	position: relative;
-		/* Flexbox */
-		display:flex;
-		flex-flow:column wrap;
-		align-items: center;
+	
+	p{
+		margin-top: 2em;
+		width: 100%;
+		text-align: center;
+		font-size: 2em;
 	}
 
-	form{
+
+	.formulario{
+
+		width: 100%;
+		color: white;
+		font-family: 'Pinyon Script', cursive;
+		font-weight: bold;
+	}
+	.contac_form{
+
+		width: 100%;
+
 		/*FLEX*/
-		
+		display: flex;
 	}
 
+	.cajetin{
+		margin-top: 3em;
+		width: 100%;
 
+		/*FLEX*/
+		display: flex;
+		flex-flow: column;
+		align-items: center;
+		justify-content: space-between;
+	}
+	label{
+		font-size: 3em;
+	}
+	input , textarea{
+		padding-left: 1em;
+		padding-right: 1em;
+		padding-top: 0.5em;
+		padding-bottom: 0.5em;
+	}
